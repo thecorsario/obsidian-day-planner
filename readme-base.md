@@ -66,7 +66,7 @@ This works out of the box: you write your tasks in a daily note, and they show u
 ### 2. [tasks community plugin](obsidian://show-plugin?id=obsidian-tasks-plugin) integration, showing events from other files in your vault
 
 You can see tasks anywhere in the vault with dates added by the [tasks community plugin](obsidian://show-plugin?id=obsidian-tasks-plugin). This also works out of the box for all the files in the vault. You only need to add the `scheduled` property to a task in one of the formats:
-- Shorthand, added by [tasks community plugin](obsidian://show-plugin?id=obsidian-tasks-plugin): `⏳ 2021-08-29`
+- Shorthand, added by [tasks community plugin](obsidian://show-plugin?id=obsidian-tasks-plugin): `📅 2021-08-29`
   - Note that this plugin has a handy modal for adding these properties
 - Full Dataview-like property: `[scheduled:: 2021-08-29]`
 - Another Dataview format: `(scheduled:: 2021-08-29)`.
@@ -74,7 +74,7 @@ You can see tasks anywhere in the vault with dates added by the [tasks community
 For example, these tasks will show up in the timeline:
 
 ```md
-- [ ] #task 08:00 - 10:00 This task uses the shorthand format ⏳ 2021-08-29
+- [ ] #task 08:00 - 10:00 This task uses the shorthand format 📅 2021-08-29
 - [ ] #task 11:00 - 13:00 This task uses the Dataview property format [scheduled:: 2021-08-29]
 ```
 

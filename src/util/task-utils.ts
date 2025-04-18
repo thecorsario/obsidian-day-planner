@@ -158,7 +158,7 @@ export function toString(task: WithTime<LocalTask>, mode: EditMode) {
   ) {
     updatedFirstLineText = addTasksPluginProp(
       updatedFirstLineText,
-      `⏳ ${task.startTime.format(defaultDayFormat)}`,
+      `📅 ${task.startTime.format(defaultDayFormat)}`,
     );
   }
 

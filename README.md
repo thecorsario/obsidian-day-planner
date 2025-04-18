@@ -81,7 +81,7 @@ To make this work,
    ![](./assets/dv-source.png)
 1. Add the tag (`#task` in this example) to the file with some tasks
 1. Add the `scheduled` property to a task in one of the formats:
-   - Shorthand, added by [tasks community plugin](obsidian://show-plugin?id=obsidian-tasks-plugin): `⏳ 2021-08-29`
+   - Shorthand, added by [tasks community plugin](obsidian://show-plugin?id=obsidian-tasks-plugin): `📅 2021-08-29`
      - Note that this plugin has a handy modal for adding these properties
    - Full Dataview-like property: `[scheduled:: 2021-08-29]`
    - Another Dataview format: `(scheduled:: 2021-08-29)`.
@@ -89,7 +89,7 @@ To make this work,
 Full examples:
 
 ```md
-- [ ] #task 08:00 - 10:00 This task uses the shorthand format ⏳ 2021-08-29
+- [ ] #task 08:00 - 10:00 This task uses the shorthand format 📅 2021-08-29
 - [ ] #task 11:00 - 13:00 This task uses the Dataview property format [scheduled:: 2021-08-29]
 ```
 

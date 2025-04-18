@@ -401,7 +401,7 @@ describe("From diff to vault", () => {
 
     expect(vault.getAbstractFileByPath("tasks.md").contents)
       .toBe(`- [ ] Buy milk
-- [ ] 11:00 - 11:30 Listen to music ⏳ 2023-01-01
+- [ ] 11:00 - 11:30 Listen to music 📅 2023-01-01
 - [ ] Play bowling
 `);
   });
@@ -411,14 +411,14 @@ describe("From diff to vault", () => {
       createInMemoryFile({
         path: "tasks.md",
         contents: `- [ ] Buy milk
-- [ ] 20:00 - 20:30 Listen to music ⏳ 2023-01-01
+- [ ] 20:00 - 20:30 Listen to music 📅 2023-01-01
 - [ ] Play bowling
 `,
       }),
     ];
     const task = createTestTask({
       status: " ",
-      text: "- [ ] 20:00 - 20:30 Listen to music ⏳ 2023-01-01",
+      text: "- [ ] 20:00 - 20:30 Listen to music 📅 2023-01-01",
       day: moment("2023-01-02"),
       startMinutes: toMinutes("20:00"),
       location: {
@@ -450,7 +450,7 @@ describe("From diff to vault", () => {
 
     expect(vault.getAbstractFileByPath("tasks.md").contents)
       .toBe(`- [ ] Buy milk
-- [ ] 20:00 - 20:30 Listen to music ⏳ 2023-01-02
+- [ ] 20:00 - 20:30 Listen to music 📅 2023-01-02
 - [ ] Play bowling
 `);
   });

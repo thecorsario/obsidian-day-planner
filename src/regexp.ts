@@ -42,7 +42,7 @@ export const keylessScheduledPropRegExp = new RegExp(
   `(\\(scheduled\\s*::\\s*)${date}(\\))`,
 );
 
-export const shortScheduledPropRegExp = new RegExp(`(⏳\\s*)${date}`);
+export const shortScheduledPropRegExp = new RegExp(`(📅\\s*)${date}`);
 
 export const scheduledPropRegExps = [
   scheduledPropRegExp,
